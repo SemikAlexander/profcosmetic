@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "903749005142",
+    "project_id": "profcosmetik-f89d3",
+    "storage_bucket": "profcosmetik-f89d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903749005142:android:acaebd59295aa5cbe930f7",
+        "android_client_info": {
+          "package_name": "com.example.profcosmetic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903749005142-vla4vuboe84ls7abdre06s9m4upg0hpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTu3ka1q1uQe1Seui2CRoSPyVW3YZy5Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903749005142-vla4vuboe84ls7abdre06s9m4upg0hpu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "903749005142-trjr0q5btg43tu2l1rei0vkq4cn8o1sq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.profcosmetic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
