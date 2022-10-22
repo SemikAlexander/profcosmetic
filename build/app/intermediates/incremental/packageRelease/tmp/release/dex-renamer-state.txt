@@ -1,0 +1,4 @@
+#Fri Sep 30 01:24:59 MSK 2022
+base.0=/Users/user/AndroidStudioProjects/profcosmetic/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

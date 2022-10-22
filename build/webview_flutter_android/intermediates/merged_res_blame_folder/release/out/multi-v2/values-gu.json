@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/incremental/mergeReleaseResources/merged.dir/values-gu/values-gu.xml",
+            "map": [
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/values-gu/values-gu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/release/values-gu/values-gu.xml",
+            "map": [
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/values-gu/values-gu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

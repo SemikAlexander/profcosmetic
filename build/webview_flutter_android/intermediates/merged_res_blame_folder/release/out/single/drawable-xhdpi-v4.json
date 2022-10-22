@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/release/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/release/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/release/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/release/drawable-xhdpi-v4/notification_bg_normal.9.png",
+        "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/release/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    }
+]

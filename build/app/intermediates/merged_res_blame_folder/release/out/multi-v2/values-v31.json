@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/main/res/values-v31/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,801",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "450,965"
+                    },
+                    "to": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,337",
+                        "endLines": "6,9",
+                        "endColumns": "12,12",
+                        "endOffsets": "332,501"
+                    }
+                }
+            ]
+        }
+    ]
+}
