@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v31/values-v31.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v31/values-v31.xml",
             "map": [
                 {
-                    "source": "/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/main/res/values-v31/styles.xml",
+                    "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/values-v31/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

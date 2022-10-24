@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/webview_flutter_android/intermediates/merged_res/debug/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/Users/user/.gradle/caches/transforms-3/420fb57e5d8c463865e48b9d43c44c73/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/webview_flutter_android/intermediates/merged_res/debug/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/webview_flutter_android/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/Users/user/.gradle/caches/transforms-3/420fb57e5d8c463865e48b9d43c44c73/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",

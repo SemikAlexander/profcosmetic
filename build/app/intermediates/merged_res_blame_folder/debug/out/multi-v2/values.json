@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/user/AndroidStudioProjects/profcosmetic/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,716",
-                        "endColumns": "143,81,103,108,119,101,78",
-                        "endOffsets": "194,276,380,489,609,711,790"
-                    },
-                    "to": {
-                        "startLines": "120,122,123,124,125,126,127",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8570,8796,8878,8982,9091,9211,9313",
-                        "endColumns": "143,81,103,108,119,101,78",
-                        "endOffsets": "8709,8873,8977,9086,9206,9308,9387"
-                    }
-                },
                 {
                     "source": "/Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/res/values/values.xml",
                     "from": {
@@ -74,25 +57,6 @@
                     }
                 },
                 {
-                    "source": "/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,16",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,925",
-                        "endLines": "9,18",
-                        "endColumns": "12,12",
-                        "endOffsets": "583,1081"
-                    },
-                    "to": {
-                        "startLines": "129,136",
-                        "startColumns": "4,4",
-                        "startOffsets": "9463,9878",
-                        "endLines": "135,138",
-                        "endColumns": "12,12",
-                        "endOffsets": "9873,10034"
-                    }
-                },
-                {
                     "source": "/Users/user/.gradle/caches/transforms-3/420fb57e5d8c463865e48b9d43c44c73/transformed/core-1.6.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,89,90,94,95,96,97,104,111,159,191,228",
@@ -112,20 +76,20 @@
                     }
                 },
                 {
-                    "source": "/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/main/res/values/colors.xml",
+                    "source": "/Users/user/Documents/GitHub/profcosmetic/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,716",
+                        "endColumns": "143,81,103,108,119,101,78",
+                        "endOffsets": "194,276,380,489,609,711,790"
                     },
                     "to": {
-                        "startLines": "21",
-                        "startColumns": "4",
-                        "startOffsets": "1332",
-                        "endColumns": "56",
-                        "endOffsets": "1384"
+                        "startLines": "120,122,123,124,125,126,127",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8570,8796,8878,8982,9091,9211,9313",
+                        "endColumns": "143,81,103,108,119,101,78",
+                        "endOffsets": "8709,8873,8977,9086,9206,9308,9387"
                     }
                 },
                 {
@@ -145,6 +109,42 @@
                         "endLines": "7,8,9,10,81,159,163,344,361,369",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "339,399,451,496,5165,11349,11546,21239,22353,22746"
+                    }
+                },
+                {
+                    "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,925",
+                        "endLines": "9,18",
+                        "endColumns": "12,12",
+                        "endOffsets": "583,1081"
+                    },
+                    "to": {
+                        "startLines": "129,136",
+                        "startColumns": "4,4",
+                        "startOffsets": "9463,9878",
+                        "endLines": "135,138",
+                        "endColumns": "12,12",
+                        "endOffsets": "9873,10034"
+                    }
+                },
+                {
+                    "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "1332",
+                        "endColumns": "56",
+                        "endOffsets": "1384"
                     }
                 }
             ]

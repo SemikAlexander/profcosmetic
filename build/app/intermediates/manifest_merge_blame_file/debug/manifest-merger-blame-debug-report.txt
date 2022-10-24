@@ -12,31 +12,31 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:6:22-64
 15
 16    <meta-data
-16-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:8:5-10:33
+16-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:8:5-10:33
 17        android:name="firebase_messaging_auto_init_enabled"
-17-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:9:9-60
+17-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:9:9-60
 18        android:value="false" />
-18-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:10:9-30
+18-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:10:9-30
 19    <meta-data
-19-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:11:5-13:33
+19-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:11:5-13:33
 20        android:name="firebase_analytics_collection_enabled"
-20-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:12:9-61
+20-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:12:9-61
 21        android:value="false" />
-21-->/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/debug/AndroidManifest.xml:13:9-30
+21-->/Users/user/Documents/GitHub/profcosmetic/android/app/src/debug/AndroidManifest.xml:13:9-30
 22
 23    <uses-permission android:name="android.permission.WAKE_LOCK" />
-23-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
-23-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-65
+23-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
+23-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-65
 24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-24-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
-24-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+24-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+24-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
 25    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-25-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-77
-25-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-74
+25-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-77
+25-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-74
 26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 26-->[com.google.firebase:firebase-messaging:23.0.8] /Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:29:5-82
 26-->[com.google.firebase:firebase-messaging:23.0.8] /Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:29:22-79
@@ -83,63 +83,63 @@
 62            android:value="2" />
 63
 64        <service
-64-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-17:72
+64-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-17:72
 65            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-65-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-107
+65-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-107
 66            android:exported="false"
-66-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+66-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
 67            android:permission="android.permission.BIND_JOB_SERVICE" />
-67-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-69
+67-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-69
 68        <service
-68-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-24:19
+68-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-24:19
 69            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-69-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-97
+69-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-97
 70            android:exported="false" >
-70-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
+70-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
 71            <intent-filter>
-71-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
+71-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
 72                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-72-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
-72-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
+72-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
+72-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
 73            </intent-filter>
 74        </service>
 75
 76        <receiver
-76-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-33:20
+76-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-33:20
 77            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-77-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-98
+77-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-98
 78            android:exported="true"
-78-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
+78-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
 79            android:permission="com.google.android.c2dm.permission.SEND" >
-79-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-73
+79-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-73
 80            <intent-filter>
-80-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+80-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
 81                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-81-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
-81-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+81-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+81-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
 82            </intent-filter>
 83        </receiver>
 84
 85        <service
-85-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:19
+85-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:19
 86            android:name="com.google.firebase.components.ComponentDiscoveryService"
-86-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:18-89
+86-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:18-89
 87            android:directBootAware="true"
 87-->[com.google.firebase:firebase-common:20.1.2] /Users/user/.gradle/caches/transforms-3/585891c9d14354175ae6526980b69e22/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
 88            android:exported="false" >
 88-->[com.google.firebase:firebase-messaging:23.0.8] /Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:55:13-37
 89            <meta-data
-89-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-38:85
+89-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-38:85
 90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-90-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:17-128
+90-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:17-128
 91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:17-82
+91-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:17-82
 92            <meta-data
-92-->[:firebase_core] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+92-->[:firebase_core] /Users/user/Documents/GitHub/profcosmetic/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-93-->[:firebase_core] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+93-->[:firebase_core] /Users/user/Documents/GitHub/profcosmetic/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 94                android:value="com.google.firebase.components.ComponentRegistrar" />
-94-->[:firebase_core] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+94-->[:firebase_core] /Users/user/Documents/GitHub/profcosmetic/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 95            <meta-data
 95-->[com.google.firebase:firebase-messaging:23.0.8] /Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:56:13-58:85
 96                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
@@ -167,15 +167,15 @@
 107        </service>
 108
 109        <provider
-109-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:41:9-45:38
+109-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:41:9-45:38
 110            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-110-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-102
+110-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-102
 111            android:authorities="com.example.profcosmetic.flutterfirebasemessaginginitprovider"
-111-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-88
+111-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-88
 112            android:exported="false"
-112-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-37
+112-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-37
 113            android:initOrder="99" />
-113-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-35
+113-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-35
 114
 115        <uses-library
 115-->[androidx.window:window:1.0.0-beta04] /Users/user/.gradle/caches/transforms-3/d25c17ca4b1326880b0ff3bb172fa54e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
@@ -199,10 +199,10 @@
 125            android:permission="com.google.android.c2dm.permission.SEND" >
 125-->[com.google.firebase:firebase-messaging:23.0.8] /Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:35:13-73
 126            <intent-filter>
-126-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+126-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
 127                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-127-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
-127-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+127-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+127-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
 128            </intent-filter>
 129        </receiver>
 130        <!--
@@ -218,10 +218,10 @@
 137            android:exported="false" >
 137-->[com.google.firebase:firebase-messaging:23.0.8] /Users/user/.gradle/caches/transforms-3/79260f0fb4d05953954760237695e033/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:48:13-37
 138            <intent-filter android:priority="-500" >
-138-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
+138-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
 139                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-139-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
-139-->[:firebase_messaging] /Users/user/AndroidStudioProjects/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
+139-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
+139-->[:firebase_messaging] /Users/user/Documents/GitHub/profcosmetic/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
 140            </intent-filter>
 141        </service>
 142        <service
