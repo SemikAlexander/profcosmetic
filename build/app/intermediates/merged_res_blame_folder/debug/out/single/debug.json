@@ -88,6 +88,10 @@
         "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/Users/user/Documents/GitHub/profcosmetic/build/app/intermediates/merged_res/debug/drawable-night-v21_background.png.flat",
+        "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/drawable-night-v21/background.png"
+    },
+    {
         "merged": "/Users/user/Documents/GitHub/profcosmetic/build/app/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },

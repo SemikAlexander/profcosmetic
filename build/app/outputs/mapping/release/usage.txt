@@ -138,7 +138,16 @@ androidx.collection.ContainerHelpers:
     static int binarySearch(long[],int,long)
     public static int idealLongArraySize(int)
 androidx.collection.LongSparseArray
-androidx.collection.LruCache
+androidx.collection.LruCache:
+    public final synchronized int createCount()
+    public final void evictAll()
+    public final synchronized int evictionCount()
+    public final synchronized int hitCount()
+    public final synchronized int maxSize()
+    public final synchronized int missCount()
+    public final synchronized int putCount()
+    public void resize(int)
+    public final synchronized int size()
 androidx.collection.SimpleArrayMap:
     private static final int BASE_SIZE
     private static final int CACHE_SIZE
@@ -264,7 +273,15 @@ androidx.core.app.ActivityRecreator
 androidx.core.app.AlarmManagerCompat
 androidx.core.app.AppComponentFactory
 androidx.core.app.AppLaunchChecker
-androidx.core.app.AppOpsManagerCompat
+androidx.core.app.AppOpsManagerCompat:
+    public static final int MODE_ALLOWED
+    public static final int MODE_DEFAULT
+    public static final int MODE_ERRORED
+    public static final int MODE_IGNORED
+    private void <init>()
+    public static int noteOp(android.content.Context,java.lang.String,int,java.lang.String)
+    public static int noteOpNoThrow(android.content.Context,java.lang.String,int,java.lang.String)
+    public static int noteProxyOp(android.content.Context,java.lang.String,java.lang.String)
 androidx.core.app.BundleCompat$BundleCompatBaseImpl
 androidx.core.app.BundleCompat
 androidx.core.app.ComponentActivity$ExtraData
@@ -766,7 +783,6 @@ androidx.core.content.ContextCompat:
     private static final java.lang.String TAG
     private static android.util.TypedValue sTempValue
     protected void <init>()
-    public static int checkSelfPermission(android.content.Context,java.lang.String)
     public static java.lang.String getAttributionTag(android.content.Context)
     public static java.io.File getCodeCacheDir(android.content.Context)
     public static android.content.res.ColorStateList getColorStateList(android.content.Context,int)
@@ -799,7 +815,13 @@ androidx.core.content.LocusIdCompat:
     public java.lang.String toString()
 androidx.core.content.MimeTypeFilter
 androidx.core.content.PermissionChecker$PermissionResult
-androidx.core.content.PermissionChecker
+androidx.core.content.PermissionChecker:
+    public static final int PERMISSION_DENIED
+    public static final int PERMISSION_DENIED_APP_OP
+    public static final int PERMISSION_GRANTED
+    private void <init>()
+    public static int checkCallingOrSelfPermission(android.content.Context,java.lang.String)
+    public static int checkCallingPermission(android.content.Context,java.lang.String,java.lang.String)
 androidx.core.content.SharedPreferencesCompat$EditorCompat$Helper
 androidx.core.content.SharedPreferencesCompat$EditorCompat
 androidx.core.content.SharedPreferencesCompat
@@ -1962,7 +1984,8 @@ androidx.fragment.app.FragmentTransition:
 androidx.fragment.app.ListFragment$1
 androidx.fragment.app.ListFragment$2
 androidx.fragment.app.ListFragment
-androidx.legacy.content.WakefulBroadcastReceiver
+androidx.legacy.content.WakefulBroadcastReceiver:
+    private static final java.lang.String EXTRA_WAKE_LOCK_ID
 androidx.legacy.coreutils.R$attr
 androidx.legacy.coreutils.R$color
 androidx.legacy.coreutils.R$dimen
@@ -2715,6 +2738,12 @@ com.google.android.gms.actions.ItemListIntents
 com.google.android.gms.actions.NoteIntents
 com.google.android.gms.actions.ReserveIntents
 com.google.android.gms.actions.SearchIntents
+com.google.android.gms.ads.identifier.AdvertisingIdClient:
+    public void <init>(android.content.Context)
+    public com.google.android.gms.ads.identifier.AdvertisingIdClient$Info getInfo()
+    public static boolean getIsAdIdFakeForDebugLogging(android.content.Context)
+    public void start()
+com.google.android.gms.ads_identifier.R
 com.google.android.gms.auth.api.signin.GoogleSignInAccount:
     public static com.google.android.gms.auth.api.signin.GoogleSignInAccount createDefault()
     public static com.google.android.gms.auth.api.signin.GoogleSignInAccount fromAccount(android.accounts.Account)
@@ -2802,7 +2831,8 @@ com.google.android.gms.cloudmessaging.R
 com.google.android.gms.common.AccountPicker$AccountChooserOptions$Builder
 com.google.android.gms.common.AccountPicker$AccountChooserOptions
 com.google.android.gms.common.AccountPicker
-com.google.android.gms.common.BlockingServiceConnection
+com.google.android.gms.common.BlockingServiceConnection:
+    public android.os.IBinder getService()
 com.google.android.gms.common.ConnectionResult:
     public static final int API_DISABLED
     public static final int API_DISABLED_FOR_CONNECTION
@@ -2853,17 +2883,14 @@ com.google.android.gms.common.GoogleApiAvailabilityLight:
     static final java.lang.String TRACKING_SOURCE_DIALOG
     static final java.lang.String TRACKING_SOURCE_NOTIFICATION
     public void cancelAvailabilityErrorNotifications(android.content.Context)
-    public int getApkVersion(android.content.Context)
     public int getClientVersion(android.content.Context)
     public android.content.Intent getErrorResolutionIntent(int)
-    public static com.google.android.gms.common.GoogleApiAvailabilityLight getInstance()
     public boolean isPlayServicesPossiblyUpdating(android.content.Context,int)
     public boolean isPlayStorePossiblyUpdating(android.content.Context,int)
     public void verifyGooglePlayServicesIsAvailable(android.content.Context,int)
 com.google.android.gms.common.GooglePlayServicesManifestException:
     public int getActualVersion()
     public int getExpectedVersion()
-com.google.android.gms.common.GooglePlayServicesNotAvailableException
 com.google.android.gms.common.GooglePlayServicesRepairableException
 com.google.android.gms.common.GooglePlayServicesUtil:
     public static final java.lang.String GMS_ERROR_DIALOG
@@ -2892,24 +2919,16 @@ com.google.android.gms.common.GooglePlayServicesUtilLight:
     public static void cancelAvailabilityErrorNotifications(android.content.Context)
     public static void enableUsingApkIndependentContext()
     public static void ensurePlayServicesAvailable(android.content.Context,int)
-    public static int getApkVersion(android.content.Context)
     public static int getClientVersion(android.content.Context)
     public static android.app.PendingIntent getErrorPendingIntent(int,android.content.Context,int)
     public static android.content.Intent getGooglePlayServicesAvailabilityRecoveryIntent(int)
     public static android.content.Context getRemoteContext(android.content.Context)
-    public static boolean honorsDebugCertificates(android.content.Context)
     public static int isGooglePlayServicesAvailable(android.content.Context)
     public static boolean isGooglePlayServicesUid(android.content.Context,int)
     public static boolean isPlayStorePossiblyUpdating(android.content.Context,int)
     public static boolean isSidewinderDevice(android.content.Context)
-    public static boolean uidHasPackageName(android.content.Context,int,java.lang.String)
 com.google.android.gms.common.GoogleSignatureVerifier:
-    private static volatile java.util.Set zzb
-    private volatile java.lang.String zzd
-    public boolean isGooglePublicSignedPackage(android.content.pm.PackageInfo)
     public boolean isPackageGoogleSigned(java.lang.String)
-    public boolean isUidGoogleSigned(int)
-    private final com.google.android.gms.common.zzx zzc(java.lang.String,boolean,boolean)
 com.google.android.gms.common.GoogleSourceStampsChecker
 com.google.android.gms.common.GoogleSourceStampsResult
 com.google.android.gms.common.PackageSignatureVerifier
@@ -3348,14 +3367,11 @@ com.google.android.gms.common.internal.BaseGmsClient:
     public static final java.lang.String DEFAULT_ACCOUNT
     public static final java.lang.String KEY_PENDING_INTENT
     protected void <init>(android.content.Context,android.os.Handler,com.google.android.gms.common.internal.GmsClientSupervisor,com.google.android.gms.common.GoogleApiAvailabilityLight,int,com.google.android.gms.common.internal.BaseGmsClient$BaseConnectionCallbacks,com.google.android.gms.common.internal.BaseGmsClient$BaseOnConnectionFailedListener)
-    protected void <init>(android.content.Context,android.os.Looper,int,com.google.android.gms.common.internal.BaseGmsClient$BaseConnectionCallbacks,com.google.android.gms.common.internal.BaseGmsClient$BaseOnConnectionFailedListener,java.lang.String)
-    public void checkAvailabilityAndConnect()
     public void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
     public final android.os.Looper getLooper()
     public android.os.IBinder getServiceBrokerBinder()
     public android.content.Intent getSignInIntent()
     public boolean providesSignIn()
-    protected void triggerNotAvailable(com.google.android.gms.common.internal.BaseGmsClient$ConnectionProgressReportCallbacks,int,android.app.PendingIntent)
 com.google.android.gms.common.internal.BinderWrapper
 com.google.android.gms.common.internal.ClientIdentity
 com.google.android.gms.common.internal.ClientSettings:
@@ -3405,8 +3421,6 @@ com.google.android.gms.common.internal.Preconditions:
     public static varargs void checkArgument(boolean,java.lang.String,java.lang.Object[])
     public static void checkHandlerThread(android.os.Handler,java.lang.String)
     public static void checkMainThread()
-    public static void checkMainThread(java.lang.String)
-    public static int checkNotZero(int)
     public static int checkNotZero(int,java.lang.Object)
     public static long checkNotZero(long)
     public static long checkNotZero(long,java.lang.Object)
@@ -3458,19 +3472,14 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelReader:
     public static java.lang.String[] createStringArray(android.os.Parcel,int)
     public static android.util.SparseArray createStringSparseArray(android.os.Parcel,int)
     public static android.util.SparseArray createTypedSparseArray(android.os.Parcel,int,android.os.Parcelable$Creator)
-    public static java.lang.Boolean readBooleanObject(android.os.Parcel,int)
     public static byte readByte(android.os.Parcel,int)
     public static char readChar(android.os.Parcel,int)
     public static double readDouble(android.os.Parcel,int)
-    public static java.lang.Double readDoubleObject(android.os.Parcel,int)
     public static float readFloat(android.os.Parcel,int)
-    public static java.lang.Float readFloatObject(android.os.Parcel,int)
     public static java.lang.Integer readIntegerObject(android.os.Parcel,int)
     public static void readList(android.os.Parcel,int,java.util.List,java.lang.ClassLoader)
-    public static java.lang.Long readLongObject(android.os.Parcel,int)
     public static android.app.PendingIntent readPendingIntent(android.os.Parcel,int)
     public static short readShort(android.os.Parcel,int)
-    private static void zza(android.os.Parcel,int,int,int)
 com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     private void <init>()
     public static void writeBigDecimal(android.os.Parcel,int,java.math.BigDecimal,boolean)
@@ -3479,7 +3488,6 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeBigIntegerArray(android.os.Parcel,int,java.math.BigInteger[],boolean)
     public static void writeBooleanArray(android.os.Parcel,int,boolean[],boolean)
     public static void writeBooleanList(android.os.Parcel,int,java.util.List,boolean)
-    public static void writeBooleanObject(android.os.Parcel,int,java.lang.Boolean,boolean)
     public static void writeByte(android.os.Parcel,int,byte)
     public static void writeByteArray(android.os.Parcel,int,byte[],boolean)
     public static void writeByteArrayArray(android.os.Parcel,int,byte[][],boolean)
@@ -3489,12 +3497,10 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeDouble(android.os.Parcel,int,double)
     public static void writeDoubleArray(android.os.Parcel,int,double[],boolean)
     public static void writeDoubleList(android.os.Parcel,int,java.util.List,boolean)
-    public static void writeDoubleObject(android.os.Parcel,int,java.lang.Double,boolean)
     public static void writeDoubleSparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
     public static void writeFloat(android.os.Parcel,int,float)
     public static void writeFloatArray(android.os.Parcel,int,float[],boolean)
     public static void writeFloatList(android.os.Parcel,int,java.util.List,boolean)
-    public static void writeFloatObject(android.os.Parcel,int,java.lang.Float,boolean)
     public static void writeFloatSparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
     public static void writeIBinderArray(android.os.Parcel,int,android.os.IBinder[],boolean)
     public static void writeIBinderList(android.os.Parcel,int,java.util.List,boolean)
@@ -3504,7 +3510,6 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeList(android.os.Parcel,int,java.util.List,boolean)
     public static void writeLongArray(android.os.Parcel,int,long[],boolean)
     public static void writeLongList(android.os.Parcel,int,java.util.List,boolean)
-    public static void writeLongObject(android.os.Parcel,int,java.lang.Long,boolean)
     public static void writeParcel(android.os.Parcel,int,android.os.Parcel,boolean)
     public static void writeParcelArray(android.os.Parcel,int,android.os.Parcel[],boolean)
     public static void writeParcelList(android.os.Parcel,int,java.util.List,boolean)
@@ -3563,9 +3568,10 @@ com.google.android.gms.common.internal.zax
 com.google.android.gms.common.internal.zay
 com.google.android.gms.common.internal.zaz
 com.google.android.gms.common.internal.zzaa
-com.google.android.gms.common.internal.zzad
-com.google.android.gms.common.internal.zzae
-com.google.android.gms.common.internal.zzaf
+com.google.android.gms.common.internal.zzad:
+    public final boolean zzg()
+com.google.android.gms.common.internal.zzaf:
+    public abstract boolean zzg()
 com.google.android.gms.common.internal.zzag:
     public static java.lang.String zzb(android.content.Context)
 com.google.android.gms.common.internal.zzaj
@@ -3578,9 +3584,6 @@ com.google.android.gms.common.internal.zzn:
 com.google.android.gms.common.internal.zzr:
     final void zzi(android.os.Looper)
 com.google.android.gms.common.internal.zzw
-com.google.android.gms.common.internal.zzx
-com.google.android.gms.common.internal.zzy:
-    public static com.google.android.gms.common.internal.zzz zzg(android.os.IBinder)
 com.google.android.gms.common.logging.Logger
 com.google.android.gms.common.providers.PooledExecutorsProvider$PooledExecutorFactory
 com.google.android.gms.common.providers.PooledExecutorsProvider
@@ -3631,7 +3634,6 @@ com.google.android.gms.common.util.AndroidUtilsLight:
     public void <init>()
 com.google.android.gms.common.util.ArrayUtils:
     private void <init>()
-    public static varargs java.lang.Object[] concat(java.lang.Object[][])
     public static varargs byte[] concatByteArrays(byte[][])
     public static java.util.ArrayList newArrayList()
     public static varargs java.lang.Object[] removeAll(java.lang.Object[],java.lang.Object[])
@@ -3657,15 +3659,22 @@ com.google.android.gms.common.util.ClientLibraryUtils
 com.google.android.gms.common.util.Clock$-CC
 com.google.android.gms.common.util.Clock:
     public abstract long currentThreadTimeMillis()
-    public abstract long currentTimeMillis()
-    public abstract long nanoTime()
-com.google.android.gms.common.util.CollectionUtils
-com.google.android.gms.common.util.CrashUtils
+com.google.android.gms.common.util.CollectionUtils:
+    private void <init>()
+    public static boolean isEmpty(java.util.Collection)
+    public static java.util.Map mapOf(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    public static java.util.Map mapOf(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    public static java.util.Map mapOfKeyValueArrays(java.lang.Object[],java.lang.Object[])
+    public static java.util.Set mutableSetOfWithSize(int)
+    public static java.util.Set setOf(java.lang.Object,java.lang.Object,java.lang.Object)
+    public static varargs java.util.Set setOf(java.lang.Object[])
+    private static java.util.Map zza(int,boolean)
+    private static java.util.Set zzb(int,boolean)
+com.google.android.gms.common.util.CrashUtils:
+    public void <init>()
 com.google.android.gms.common.util.DataUtils
 com.google.android.gms.common.util.DefaultClock:
     public final long currentThreadTimeMillis()
-    public final long currentTimeMillis()
-    public final long nanoTime()
 com.google.android.gms.common.util.DeviceProperties:
     private static java.lang.Boolean zza
     private static java.lang.Boolean zzb
@@ -3684,12 +3693,10 @@ com.google.android.gms.common.util.DeviceProperties:
     public static boolean isTablet(android.content.Context)
     public static boolean isTablet(android.content.res.Resources)
     public static boolean isTv(android.content.Context)
-    public static boolean isUserBuild()
     public static boolean zzc(android.content.res.Resources)
 com.google.android.gms.common.util.GmsVersion
 com.google.android.gms.common.util.Hex:
     public void <init>()
-    public static java.lang.String bytesToStringLowercase(byte[])
     public static java.lang.String bytesToStringUppercase(byte[])
     public static byte[] stringToBytes(java.lang.String)
 com.google.android.gms.common.util.HexDumpUtils
@@ -3713,7 +3720,6 @@ com.google.android.gms.common.util.PlatformVersion:
     public static boolean isAtLeastHoneycombMR1()
     public static boolean isAtLeastIceCreamSandwichMR1()
     public static boolean isAtLeastJellyBeanMR1()
-    public static boolean isAtLeastKitKat()
     public static boolean isAtLeastLollipopMR1()
     public static boolean isAtLeastM()
     public static boolean isAtLeastSv2()
@@ -3728,7 +3734,8 @@ com.google.android.gms.common.util.SharedPreferencesUtils
 com.google.android.gms.common.util.Strings:
     private void <init>()
     public static java.lang.String emptyToNull(java.lang.String)
-com.google.android.gms.common.util.UidVerifier
+com.google.android.gms.common.util.UidVerifier:
+    private void <init>()
 com.google.android.gms.common.util.VisibleForTesting
 com.google.android.gms.common.util.WorkSourceUtil:
     private void <init>()
@@ -3744,10 +3751,7 @@ com.google.android.gms.common.util.zzc
 com.google.android.gms.common.wrappers.InstantApps:
     public void <init>()
 com.google.android.gms.common.wrappers.PackageManagerWrapper:
-    public int checkCallingOrSelfPermission(java.lang.String)
     public androidx.core.util.Pair getApplicationLabelAndIcon(java.lang.String)
-    public boolean isCallerInstantApp()
-    public final boolean zza(int,java.lang.String)
 com.google.android.gms.common.zaa
 com.google.android.gms.common.zab
 com.google.android.gms.common.zza
@@ -3756,37 +3760,14 @@ com.google.android.gms.common.zzab
 com.google.android.gms.common.zzac
 com.google.android.gms.common.zzad
 com.google.android.gms.common.zzae
-com.google.android.gms.common.zzd
-com.google.android.gms.common.zze
 com.google.android.gms.common.zzn:
-    private static volatile com.google.android.gms.common.internal.zzaf zze
-    static com.google.android.gms.common.zzx zza(java.lang.String,com.google.android.gms.common.zzj,boolean,boolean)
-    static com.google.android.gms.common.zzx zzb(java.lang.String,boolean,boolean,boolean)
     static com.google.android.gms.common.zzx zzc(java.lang.String,boolean,boolean,boolean)
-    static synthetic java.lang.String zzd(boolean,java.lang.String,com.google.android.gms.common.zzj)
     static boolean zzf()
-    static boolean zzg()
-    private static com.google.android.gms.common.zzx zzh(java.lang.String,com.google.android.gms.common.zzj,boolean,boolean)
-    private static com.google.android.gms.common.zzx zzi(java.lang.String,boolean,boolean,boolean,boolean)
-    private static void zzj()
-com.google.android.gms.common.zzo
-com.google.android.gms.common.zzp
-com.google.android.gms.common.zzq
-com.google.android.gms.common.zzr
-com.google.android.gms.common.zzs
-com.google.android.gms.common.zzt
-com.google.android.gms.common.zzu
-com.google.android.gms.common.zzv
-com.google.android.gms.common.zzw
-com.google.android.gms.common.zzx
-com.google.android.gms.common.zzy
 com.google.android.gms.common.zzz
 com.google.android.gms.dynamic.DeferredLifecycleHelper
 com.google.android.gms.dynamic.FragmentWrapper
 com.google.android.gms.dynamic.IFragmentWrapper$Stub
 com.google.android.gms.dynamic.IFragmentWrapper
-com.google.android.gms.dynamic.IObjectWrapper$Stub:
-    public static com.google.android.gms.dynamic.IObjectWrapper asInterface(android.os.IBinder)
 com.google.android.gms.dynamic.LifecycleDelegate
 com.google.android.gms.dynamic.OnDelegateCreatedListener
 com.google.android.gms.dynamic.RemoteCreator$RemoteCreatorException
@@ -3801,30 +3782,19 @@ com.google.android.gms.dynamic.zaf
 com.google.android.gms.dynamic.zag
 com.google.android.gms.dynamic.zah
 com.google.android.gms.dynamic.zza
-com.google.android.gms.dynamic.zzb
-com.google.android.gms.dynamite.DynamiteModule$LoadingException
-com.google.android.gms.dynamite.DynamiteModule$VersionPolicy$IVersions
-com.google.android.gms.dynamite.DynamiteModule$VersionPolicy$SelectionResult
-com.google.android.gms.dynamite.DynamiteModule$VersionPolicy
-com.google.android.gms.dynamite.DynamiteModule
-com.google.android.gms.dynamite.zza
-com.google.android.gms.dynamite.zzb
-com.google.android.gms.dynamite.zzc
-com.google.android.gms.dynamite.zzd
-com.google.android.gms.dynamite.zze
-com.google.android.gms.dynamite.zzf
-com.google.android.gms.dynamite.zzg
-com.google.android.gms.dynamite.zzh
-com.google.android.gms.dynamite.zzi
-com.google.android.gms.dynamite.zzj
-com.google.android.gms.dynamite.zzk
-com.google.android.gms.dynamite.zzl
-com.google.android.gms.dynamite.zzm
-com.google.android.gms.dynamite.zzn
-com.google.android.gms.dynamite.zzo
-com.google.android.gms.dynamite.zzp
-com.google.android.gms.dynamite.zzq
-com.google.android.gms.dynamite.zzr
+com.google.android.gms.dynamite.DynamiteModule:
+    public static final int LOCAL
+    public static final int NONE
+    public static final int NO_SELECTION
+    public static final int REMOTE
+    public android.content.Context getModuleContext()
+com.google.android.gms.internal.ads_identifier.zzb:
+    public final android.os.IBinder asBinder()
+    public final boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+com.google.android.gms.internal.ads_identifier.zzd:
+    public final boolean zzd()
+com.google.android.gms.internal.ads_identifier.zzf:
+    public abstract boolean zzd()
 com.google.android.gms.internal.base.zaa:
     protected final android.os.Parcel zab(int,android.os.Parcel)
 com.google.android.gms.internal.base.zac:
@@ -3861,10 +3831,7 @@ com.google.android.gms.internal.common.zzai
 com.google.android.gms.internal.common.zzaj
 com.google.android.gms.internal.common.zzak
 com.google.android.gms.internal.common.zzc:
-    public static void zzc(android.os.Parcel,boolean)
-    public static void zzd(android.os.Parcel,android.os.Parcelable)
     public static void zze(android.os.Parcel,android.os.Parcelable)
-    public static boolean zzg(android.os.Parcel)
 com.google.android.gms.internal.common.zze
 com.google.android.gms.internal.common.zzf
 com.google.android.gms.internal.common.zzg
@@ -3888,6 +3855,124 @@ com.google.android.gms.internal.common.zzw
 com.google.android.gms.internal.common.zzx
 com.google.android.gms.internal.common.zzy
 com.google.android.gms.internal.common.zzz
+com.google.android.gms.internal.measurement.zzbw:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzby:
+    public void <init>()
+com.google.android.gms.internal.measurement.zzca:
+    public final void clearMeasurementEnabled(long)
+    public final void getAppInstanceId(com.google.android.gms.internal.measurement.zzcf)
+    public final void getTestFlag(com.google.android.gms.internal.measurement.zzcf,int)
+    public final void initForTests(java.util.Map)
+    public final void isDataCollectionEnabled(com.google.android.gms.internal.measurement.zzcf)
+    public final void logEventAndBundle(java.lang.String,java.lang.String,android.os.Bundle,com.google.android.gms.internal.measurement.zzcf,long)
+    public final void performAction(android.os.Bundle,com.google.android.gms.internal.measurement.zzcf,long)
+    public final void registerOnMeasurementEventListener(com.google.android.gms.internal.measurement.zzci)
+    public final void resetAnalyticsData(long)
+    public final void setConsent(android.os.Bundle,long)
+    public final void setConsentThirdParty(android.os.Bundle,long)
+    public final void setDefaultEventParameters(android.os.Bundle)
+    public final void setEventInterceptor(com.google.android.gms.internal.measurement.zzci)
+    public final void setInstanceIdProvider(com.google.android.gms.internal.measurement.zzck)
+    public final void setMeasurementEnabled(boolean,long)
+    public final void setMinimumSessionDuration(long)
+    public final void setSessionTimeoutDuration(long)
+    public final void setUserId(java.lang.String,long)
+    public final void unregisterOnMeasurementEventListener(com.google.android.gms.internal.measurement.zzci)
+com.google.android.gms.internal.measurement.zzch
+com.google.android.gms.internal.measurement.zzcq
+com.google.android.gms.internal.measurement.zzcs
+com.google.android.gms.internal.measurement.zzct
+com.google.android.gms.internal.measurement.zzcu
+com.google.android.gms.internal.measurement.zzcv
+com.google.android.gms.internal.measurement.zzcw
+com.google.android.gms.internal.measurement.zzdh
+com.google.android.gms.internal.measurement.zzdk
+com.google.android.gms.internal.measurement.zzdl
+com.google.android.gms.internal.measurement.zzdn
+com.google.android.gms.internal.measurement.zzdo
+com.google.android.gms.internal.measurement.zzdp
+com.google.android.gms.internal.measurement.zzdq
+com.google.android.gms.internal.measurement.zzdu
+com.google.android.gms.internal.measurement.zzdv
+com.google.android.gms.internal.measurement.zzee:
+    public final void zzB(com.google.android.gms.measurement.internal.zzgz)
+    public final void zzC()
+    public final void zzE(android.os.Bundle)
+    public final void zzF(android.os.Bundle)
+    public final void zzI(android.os.Bundle)
+    public final void zzJ(com.google.android.gms.measurement.internal.zzgy)
+    public final void zzK(java.lang.Boolean)
+    public final void zzL(long)
+    public final void zzM(java.lang.String)
+    public final void zzO(com.google.android.gms.measurement.internal.zzgz)
+    public final android.os.Bundle zzc(android.os.Bundle,boolean)
+    public final java.lang.Object zzh(int)
+    public final java.lang.String zzj()
+    public final java.lang.String zzk()
+    public final void zzx(java.lang.String,android.os.Bundle)
+    public final void zzz(java.lang.String,java.lang.String,android.os.Bundle,long)
+com.google.android.gms.internal.measurement.zzef:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.measurement.zzem:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzet:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzey:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.measurement.zzez:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzff:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzfh:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzfj:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.measurement.zzfl:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzfx:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzgm:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.measurement.zzgn:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzgp:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzgr:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzgt:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzim:
+    public synthetic bridge java.lang.Object clone()
+    public abstract com.google.android.gms.internal.measurement.zzim zzau()
+com.google.android.gms.internal.measurement.zzio:
+    public void add(int,java.lang.Object)
+    public java.lang.Object set(int,java.lang.Object)
+com.google.android.gms.internal.measurement.zziq:
+    void <init>()
+com.google.android.gms.internal.measurement.zzjc:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzjj:
+    void <init>()
+com.google.android.gms.internal.measurement.zzjq:
+    public static final synthetic int zzb
+com.google.android.gms.internal.measurement.zzka:
+    public final synthetic bridge com.google.android.gms.internal.measurement.zzim zzau()
+com.google.android.gms.internal.measurement.zzkd
+com.google.android.gms.internal.measurement.zzkq:
+    public final boolean equals(java.lang.Object)
+    public final int hashCode()
+    public final java.lang.String toString()
+com.google.android.gms.internal.measurement.zzkv:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzkx:
+    private void <init>()
+com.google.android.gms.internal.measurement.zzlu:
+    void <init>()
 com.google.android.gms.internal.stats.zza:
     public void close()
     public synchronized void finalize()
@@ -3900,6 +3985,109 @@ com.google.android.gms.internal.stats.zzi:
     public void <init>()
 com.google.android.gms.internal.tasks.zza:
     public void <init>()
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty:
+    public void <init>(com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty)
+com.google.android.gms.measurement.AppMeasurement$EventInterceptor
+com.google.android.gms.measurement.AppMeasurement$OnEventListener
+com.google.android.gms.measurement.AppMeasurement:
+    public static final java.lang.String CRASH_ORIGIN
+    public static final java.lang.String FCM_ORIGIN
+    public static final java.lang.String FIAM_ORIGIN
+    public java.lang.Boolean getBoolean()
+    public java.lang.Double getDouble()
+    public java.lang.Integer getInteger()
+    public java.lang.Long getLong()
+    public java.lang.String getString()
+    public java.util.Map getUserProperties(boolean)
+    public void logEventInternalNoInterceptor(java.lang.String,java.lang.String,android.os.Bundle,long)
+    public void registerOnMeasurementEventListener(com.google.android.gms.measurement.AppMeasurement$OnEventListener)
+    public void setEventInterceptor(com.google.android.gms.measurement.AppMeasurement$EventInterceptor)
+    public void unregisterOnMeasurementEventListener(com.google.android.gms.measurement.AppMeasurement$OnEventListener)
+com.google.android.gms.measurement.AppMeasurementContentProvider
+com.google.android.gms.measurement.AppMeasurementReceiver:
+    public android.content.BroadcastReceiver$PendingResult doGoAsync()
+com.google.android.gms.measurement.api.AppMeasurementSdk$ConditionalUserProperty
+com.google.android.gms.measurement.api.AppMeasurementSdk$EventInterceptor
+com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener
+com.google.android.gms.measurement.api.AppMeasurementSdk:
+    public void beginAdUnitExposure(java.lang.String)
+    public void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
+    public void endAdUnitExposure(java.lang.String)
+    public long generateEventId()
+    public java.lang.String getAppIdOrigin()
+    public java.lang.String getAppInstanceId()
+    public java.util.List getConditionalUserProperties(java.lang.String,java.lang.String)
+    public java.lang.String getCurrentScreenClass()
+    public java.lang.String getCurrentScreenName()
+    public java.lang.String getGmpAppId()
+    public static com.google.android.gms.measurement.api.AppMeasurementSdk getInstance(android.content.Context)
+    public static com.google.android.gms.measurement.api.AppMeasurementSdk getInstance(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.os.Bundle)
+    public int getMaxUserProperties(java.lang.String)
+    public java.util.Map getUserProperties(java.lang.String,java.lang.String,boolean)
+    public void logEventNoInterceptor(java.lang.String,java.lang.String,android.os.Bundle,long)
+    public void performAction(android.os.Bundle)
+    public android.os.Bundle performActionWithResponse(android.os.Bundle)
+    public void registerOnMeasurementEventListener(com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener)
+    public void setConditionalUserProperty(android.os.Bundle)
+    public void setConsent(android.os.Bundle)
+    public void setCurrentScreen(android.app.Activity,java.lang.String,java.lang.String)
+    public void setEventInterceptor(com.google.android.gms.measurement.api.AppMeasurementSdk$EventInterceptor)
+    public void setMeasurementEnabled(java.lang.Boolean)
+    public void setMeasurementEnabled(boolean)
+    public void unregisterOnMeasurementEventListener(com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener)
+com.google.android.gms.measurement.api.R
+com.google.android.gms.measurement.internal.zzec:
+    public final java.util.List zze(com.google.android.gms.measurement.internal.zzq,boolean)
+    public final void zzl(com.google.android.gms.measurement.internal.zzaw,java.lang.String,java.lang.String)
+    public final void zzo(com.google.android.gms.measurement.internal.zzac)
+com.google.android.gms.measurement.internal.zzhk
+com.google.android.gms.measurement.internal.zzid:
+    public final java.util.List zzt(boolean)
+com.google.android.gms.measurement.internal.zzie:
+    public abstract java.lang.Object zzg(int)
+    public abstract void zzt(java.lang.String,java.lang.String,android.os.Bundle,long)
+    public abstract void zzu(com.google.android.gms.measurement.internal.zzgz)
+    public abstract void zzw(com.google.android.gms.measurement.internal.zzgy)
+    public abstract void zzx(com.google.android.gms.measurement.internal.zzgz)
+com.google.android.gms.measurement.internal.zzij:
+    public static java.lang.Object zza(java.lang.Object)
+com.google.android.gms.measurement.internal.zziv
+com.google.android.gms.measurement.internal.zzjs:
+    protected final void zzx(java.util.concurrent.atomic.AtomicReference,boolean)
+com.google.android.gms.measurement.sdk.R
+com.google.android.gms.measurement.sdk.api.R
+com.google.android.gms.measurement.zza:
+    public final java.lang.Boolean zzc()
+    public final java.lang.Double zzd()
+    public final java.lang.Integer zze()
+    public final java.lang.Long zzf()
+    public final java.lang.Object zzg(int)
+    public final java.lang.String zzl()
+    public final java.util.Map zzn(boolean)
+    public final void zzt(java.lang.String,java.lang.String,android.os.Bundle,long)
+    public final void zzu(com.google.android.gms.measurement.internal.zzgz)
+    public final void zzw(com.google.android.gms.measurement.internal.zzgy)
+    public final void zzx(com.google.android.gms.measurement.internal.zzgz)
+com.google.android.gms.measurement.zzb:
+    public final java.lang.Boolean zzc()
+    public final java.lang.Double zzd()
+    public final java.lang.Integer zze()
+    public final java.lang.Long zzf()
+    public final java.lang.Object zzg(int)
+    public final java.lang.String zzl()
+    public final java.util.Map zzn(boolean)
+    public final void zzt(java.lang.String,java.lang.String,android.os.Bundle,long)
+    public final void zzu(com.google.android.gms.measurement.internal.zzgz)
+    public final void zzw(com.google.android.gms.measurement.internal.zzgy)
+    public final void zzx(com.google.android.gms.measurement.internal.zzgz)
+com.google.android.gms.measurement.zzd:
+    abstract java.lang.Boolean zzc()
+    abstract java.lang.Double zzd()
+    abstract java.lang.Integer zze()
+    abstract java.lang.Long zzf()
+    abstract java.lang.String zzl()
+    abstract java.util.Map zzn(boolean)
+com.google.android.gms.measurement_base.R
 com.google.android.gms.security.ProviderInstaller$ProviderInstallListener
 com.google.android.gms.security.ProviderInstaller
 com.google.android.gms.security.zza
@@ -4071,6 +4259,23 @@ com.google.firebase.R$string
 com.google.firebase.R$style
 com.google.firebase.R$styleable
 com.google.firebase.R
+com.google.firebase.analytics.FirebaseAnalytics$ConsentStatus
+com.google.firebase.analytics.FirebaseAnalytics$ConsentType
+com.google.firebase.analytics.FirebaseAnalytics$Event
+com.google.firebase.analytics.FirebaseAnalytics$Param
+com.google.firebase.analytics.FirebaseAnalytics$UserProperty
+com.google.firebase.analytics.FirebaseAnalytics:
+    private java.util.concurrent.ExecutorService zzc
+    public com.google.android.gms.tasks.Task getAppInstanceId()
+    public void logEvent(java.lang.String,android.os.Bundle)
+    public void resetAnalyticsData()
+    public void setAnalyticsCollectionEnabled(boolean)
+    public void setConsent(java.util.Map)
+    public void setDefaultEventParameters(android.os.Bundle)
+    public void setSessionTimeoutDuration(long)
+    public void setUserId(java.lang.String)
+    public void setUserProperty(java.lang.String,java.lang.String)
+    static synthetic bridge com.google.android.gms.internal.measurement.zzee zza(com.google.firebase.analytics.FirebaseAnalytics)
 com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle
 com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener
 com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty
@@ -4081,13 +4286,46 @@ com.google.firebase.analytics.connector.AnalyticsConnector:
     public abstract java.util.Map getUserProperties(boolean)
     public abstract com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle registerAnalyticsConnectorListener(java.lang.String,com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener)
     public abstract void setConditionalUserProperty(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+com.google.firebase.analytics.connector.AnalyticsConnectorImpl$1
+com.google.firebase.analytics.connector.AnalyticsConnectorImpl:
+    public void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
+    public java.util.List getConditionalUserProperties(java.lang.String,java.lang.String)
+    public static com.google.firebase.analytics.connector.AnalyticsConnector getInstance()
+    public static com.google.firebase.analytics.connector.AnalyticsConnector getInstance(com.google.firebase.FirebaseApp)
+    public int getMaxUserProperties(java.lang.String)
+    public java.util.Map getUserProperties(boolean)
+    public com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle registerAnalyticsConnectorListener(java.lang.String,com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener)
+    public void setConditionalUserProperty(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+    static synthetic bridge boolean zzb(com.google.firebase.analytics.connector.AnalyticsConnectorImpl,java.lang.String)
+    private final boolean zzc(java.lang.String)
 com.google.firebase.analytics.connector.R
+com.google.firebase.analytics.connector.internal.zza
+com.google.firebase.analytics.connector.internal.zzc:
+    public static android.os.Bundle zza(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+    public static com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty zzb(android.os.Bundle)
+    public static java.lang.String zzc(java.lang.String)
+    public static java.lang.String zzd(java.lang.String)
+    public static boolean zzf(java.lang.String)
+    public static boolean zzg(java.lang.String)
+    public static boolean zzi(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+    public static boolean zzk(java.lang.String)
+com.google.firebase.analytics.connector.internal.zzd
+com.google.firebase.analytics.connector.internal.zze
+com.google.firebase.analytics.connector.internal.zzf
+com.google.firebase.analytics.connector.internal.zzg
+com.google.firebase.analytics.zza
+com.google.firebase.analytics.zzb
+com.google.firebase.analytics.zzc:
+    public final java.lang.Object zzg(int)
+    public final void zzt(java.lang.String,java.lang.String,android.os.Bundle,long)
+    public final void zzu(com.google.android.gms.measurement.internal.zzgz)
+    public final void zzw(com.google.android.gms.measurement.internal.zzgy)
+    public final void zzx(com.google.android.gms.measurement.internal.zzgz)
 com.google.firebase.annotations.DeferredApi
 com.google.firebase.annotations.PreviewApi
 com.google.firebase.annotations.PublicApi
 com.google.firebase.components.BuildConfig
 com.google.firebase.components.Component$Builder:
-    public com.google.firebase.components.Component$Builder eagerInDefaultApp()
     public com.google.firebase.components.Component$Builder name(java.lang.String)
     public com.google.firebase.components.Component$Builder publishes(java.lang.Class)
 com.google.firebase.components.Component:
@@ -4224,10 +4462,7 @@ com.google.firebase.encoders.proto.ProtobufValueEncoderContext:
     public com.google.firebase.encoders.ValueEncoderContext add(int)
     public com.google.firebase.encoders.ValueEncoderContext add(long)
     public com.google.firebase.encoders.ValueEncoderContext add(byte[])
-com.google.firebase.events.Event:
-    public java.lang.Object getPayload()
-com.google.firebase.events.Subscriber:
-    public abstract void subscribe(java.lang.Class,java.util.concurrent.Executor,com.google.firebase.events.EventHandler)
+com.google.firebase.firebase_analytics.R
 com.google.firebase.heartbeatinfo.AutoValue_SdkHeartBeatResult
 com.google.firebase.heartbeatinfo.HeartBeatConsumerComponent:
     private void <init>()
@@ -4273,7 +4508,6 @@ com.google.firebase.installations.FirebaseInstallations:
     static synthetic java.util.Set access$000(com.google.firebase.installations.FirebaseInstallations)
     public com.google.android.gms.tasks.Task delete()
     private java.lang.Void deleteFirebaseInstallationId()
-    public static com.google.firebase.installations.FirebaseInstallations getInstance()
     java.lang.String getName()
     public synchronized com.google.firebase.installations.internal.FidListenerHandle registerFidListener(com.google.firebase.installations.internal.FidListener)
 com.google.firebase.installations.FirebaseInstallationsApi:
@@ -4382,6 +4616,8 @@ com.google.firebase.installations.remote.TokenResult:
 com.google.firebase.internal.DataCollectionConfigStorage:
     public static final java.lang.String DATA_COLLECTION_DEFAULT_ENABLED
     private static final java.lang.String FIREBASE_APP_PREFS
+com.google.firebase.measurement.R
+com.google.firebase.measurement_impl.R
 com.google.firebase.messaging.AutoProtoEncoderDoNotUseEncoder:
     public static final int CODEGEN_VERSION
 com.google.firebase.messaging.BuildConfig
@@ -11781,17 +12017,14 @@ com.google.android.gms.auth.api.signin.GoogleSignInAccount:
     public static com.google.android.gms.common.util.Clock zaa
 com.google.android.gms.common.GoogleApiAvailability:
     public static final int GOOGLE_PLAY_SERVICES_VERSION_CODE
-com.google.android.gms.common.GoogleApiAvailabilityLight:
-    private static final com.google.android.gms.common.GoogleApiAvailabilityLight zza
 com.google.android.gms.common.GooglePlayServicesManifestException:
     private final int zza
+com.google.android.gms.common.GooglePlayServicesNotAvailableException:
+    public final int errorCode
 com.google.android.gms.common.GooglePlayServicesUtil:
     public static final int GOOGLE_PLAY_SERVICES_VERSION_CODE
-com.google.android.gms.common.GooglePlayServicesUtilLight:
-    static boolean zza
-    private static boolean zzb
 com.google.android.gms.common.GoogleSignatureVerifier:
-    private final android.content.Context zzc
+    private static volatile java.util.Set zzb
 com.google.android.gms.common.api.Api:
     private final com.google.android.gms.common.api.Api$ClientKey zab
 com.google.android.gms.common.api.GoogleApi:
@@ -11836,7 +12069,6 @@ com.google.android.gms.common.internal.BaseGmsClient:
     private int zzi
     private long zzj
     private final android.os.Looper zzm
-    private final com.google.android.gms.common.GoogleApiAvailabilityLight zzo
 com.google.android.gms.common.internal.ClientSettings:
     private final int zae
     private final android.view.View zaf
@@ -11850,8 +12082,8 @@ com.google.android.gms.common.internal.zzt:
     private static final android.net.Uri zzb
 com.google.android.gms.common.util.AndroidUtilsLight:
     private static volatile int zza
-com.google.android.gms.common.util.Hex:
-    private static final char[] zzb
+com.google.android.gms.common.util.CrashUtils:
+    private static final java.lang.String[] zza
 com.google.android.gms.common.util.Strings:
     private static final java.util.regex.Pattern zza
 com.google.android.gms.common.util.WorkSourceUtil:
@@ -11865,11 +12097,107 @@ com.google.android.gms.common.util.WorkSourceUtil:
 com.google.android.gms.common.zzn:
     static final com.google.android.gms.common.zzl zza
     static final com.google.android.gms.common.zzl zzb
-    private static final java.lang.Object zzf
+com.google.android.gms.common.zzx:
+    final int zzd
+com.google.android.gms.dynamite.DynamiteModule:
+    public static final com.google.android.gms.dynamite.DynamiteModule$VersionPolicy PREFER_HIGHEST_OR_REMOTE_VERSION
+    public static final com.google.android.gms.dynamite.DynamiteModule$VersionPolicy PREFER_LOCAL
+    public static final com.google.android.gms.dynamite.DynamiteModule$VersionPolicy PREFER_REMOTE
+    public static final com.google.android.gms.dynamite.DynamiteModule$VersionPolicy PREFER_REMOTE_VERSION_NO_FORCE_STAGING
+    public static final com.google.android.gms.dynamite.DynamiteModule$VersionPolicy zza
+com.google.android.gms.internal.ads_identifier.zzc:
+    private static final java.lang.ClassLoader zza
 com.google.android.gms.internal.base.zac:
     private static final java.lang.ClassLoader zaa
 com.google.android.gms.internal.common.zzc:
     private static final java.lang.ClassLoader zza
+com.google.android.gms.internal.measurement.zzee:
+    private final java.util.List zzf
+    private final java.lang.String zzi
+com.google.android.gms.internal.measurement.zzep:
+    private static final com.google.android.gms.internal.measurement.zzkh zza
+com.google.android.gms.internal.measurement.zzew:
+    private static final com.google.android.gms.internal.measurement.zzkh zza
+com.google.android.gms.internal.measurement.zzgw:
+    private static final com.google.android.gms.internal.measurement.zzkh zza
+com.google.android.gms.internal.measurement.zzia:
+    private static volatile boolean zzf
+    private static final java.util.concurrent.atomic.AtomicReference zzg
+    private static final com.google.android.gms.internal.measurement.zzic zzh
+com.google.android.gms.internal.measurement.zzib:
+    private final android.content.SharedPreferences$OnSharedPreferenceChangeListener zzc
+com.google.android.gms.internal.measurement.zzjd:
+    private static final java.util.Comparator zza
+    private static final com.google.android.gms.internal.measurement.zzjc zzd
+com.google.android.gms.internal.measurement.zzjf:
+    private final byte[] zzb
+com.google.android.gms.internal.measurement.zzjh:
+    private static volatile int zzb
+com.google.android.gms.internal.measurement.zzjq:
+    private static volatile boolean zzc
+com.google.android.gms.internal.measurement.zzjw:
+    private final com.google.android.gms.internal.measurement.zzkp zzab
+    private final java.lang.Class zzad
+com.google.android.gms.internal.measurement.zzkg
+com.google.android.gms.internal.measurement.zzkh
+com.google.android.gms.internal.measurement.zzkm:
+    static final java.nio.charset.Charset zza
+    static final java.nio.charset.Charset zzc
+    public static final java.nio.ByteBuffer zze
+    public static final com.google.android.gms.internal.measurement.zzjh zzf
+com.google.android.gms.internal.measurement.zzkp:
+    private final java.lang.Class zzl
+com.google.android.gms.internal.measurement.zzkq
+com.google.android.gms.internal.measurement.zzkr:
+    private static final com.google.android.gms.internal.measurement.zzjq zzb
+com.google.android.gms.internal.measurement.zzks:
+    public static final com.google.android.gms.internal.measurement.zzkt zza
+com.google.android.gms.internal.measurement.zzlo:
+    private final com.google.android.gms.internal.measurement.zzlq zzp
+com.google.android.gms.internal.measurement.zzn:
+    private final com.google.android.gms.internal.measurement.zzo zza
+com.google.android.gms.internal.measurement.zzno:
+    public static final com.google.android.gms.internal.measurement.zzia zzd
+    public static final com.google.android.gms.internal.measurement.zzia zzq
+    public static final com.google.android.gms.internal.measurement.zzia zzs
+com.google.android.gms.internal.measurement.zznr:
+    public static final com.google.android.gms.internal.measurement.zzia zza
+    public static final com.google.android.gms.internal.measurement.zzia zzb
+    public static final com.google.android.gms.internal.measurement.zzia zzc
+com.google.android.gms.internal.measurement.zznu:
+    public static final com.google.android.gms.internal.measurement.zzia zza
+com.google.android.gms.internal.measurement.zzoa:
+    public static final com.google.android.gms.internal.measurement.zzia zza
+com.google.android.gms.internal.measurement.zzog:
+    public static final com.google.android.gms.internal.measurement.zzia zzb
+    public static final com.google.android.gms.internal.measurement.zzia zzc
+com.google.android.gms.internal.measurement.zzoj:
+    public static final com.google.android.gms.internal.measurement.zzia zza
+    public static final com.google.android.gms.internal.measurement.zzia zzb
+    public static final com.google.android.gms.internal.measurement.zzia zzd
+    public static final com.google.android.gms.internal.measurement.zzia zze
+com.google.android.gms.internal.measurement.zzom:
+    public static final com.google.android.gms.internal.measurement.zzia zza
+    public static final com.google.android.gms.internal.measurement.zzia zzb
+    public static final com.google.android.gms.internal.measurement.zzia zzd
+com.google.android.gms.internal.measurement.zzop:
+    public static final com.google.android.gms.internal.measurement.zzia zza
+    public static final com.google.android.gms.internal.measurement.zzia zzb
+    public static final com.google.android.gms.internal.measurement.zzia zzd
+com.google.android.gms.measurement.internal.zzeb:
+    private static final java.util.Set zzaD
+    public static final com.google.android.gms.measurement.internal.zzea zzae
+    public static final com.google.android.gms.measurement.internal.zzea zzag
+    public static final com.google.android.gms.measurement.internal.zzea zzah
+com.google.android.gms.measurement.internal.zzef:
+    private java.lang.String zze
+com.google.android.gms.measurement.internal.zzew:
+    static final java.lang.String zza
+com.google.android.gms.measurement.internal.zzfr
+com.google.android.gms.measurement.internal.zzjh:
+    final synthetic java.lang.String zzd
+com.google.android.gms.measurement.internal.zzji:
+    final synthetic com.google.android.gms.measurement.internal.zzac zzd
 com.google.android.gms.signin.zad:
     public static final com.google.android.gms.common.api.Scope zae
     public static final com.google.android.gms.common.api.Scope zaf
@@ -11878,10 +12206,10 @@ com.google.android.gms.signin.zad:
 com.google.android.gms.stats.WakeLock:
     private final java.lang.String zzq
     private final android.content.Context zzr
-com.google.firebase.DataCollectionDefaultChange:
-    public final boolean enabled
-com.google.firebase.components.DependencyCycleException:
-    private final java.util.List componentsInCycle
+com.google.firebase.analytics.connector.AnalyticsConnectorImpl:
+    final java.util.Map zzb
+com.google.firebase.analytics.connector.internal.zzc:
+    private static final java.util.Set zza
 com.google.firebase.components.RestrictedComponentContainer:
     private final java.util.Set allowedDeferredInterfaces
 com.google.firebase.encoders.Encoder

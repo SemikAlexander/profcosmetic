@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/flutter_native_splash/intermediates/incremental/mergeReleaseResources/merged.dir/values-eu/values-eu.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/flutter_native_splash/intermediates/incremental/mergeReleaseResources/merged.dir/values-eu/values-eu.xml",
             "map": [
                 {
-                    "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/values-eu/values-eu.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-3/420fb57e5d8c463865e48b9d43c44c73/transformed/core-1.6.0/res/values-eu/values-eu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/flutter_native_splash/intermediates/merged_res/release/values-eu/values-eu.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/flutter_native_splash/intermediates/merged_res/release/values-eu/values-eu.xml",
             "map": [
                 {
-                    "source": "/Users/user/.gradle/caches/transforms-3/0d81eeb35944ce2f304701875f13dd6e/transformed/core-1.6.0/res/values-eu/values-eu.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-3/420fb57e5d8c463865e48b9d43c44c73/transformed/core-1.6.0/res/values-eu/values-eu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

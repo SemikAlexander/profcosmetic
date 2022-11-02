@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/AndroidStudioProjects/profcosmetic/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/user/Documents/GitHub/profcosmetic/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/user/AndroidStudioProjects/profcosmetic/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/user/Documents/GitHub/profcosmetic/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,16",
                         "startColumns": "4,4",

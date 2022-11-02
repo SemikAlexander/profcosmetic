@@ -62,11 +62,10 @@ flutter_icons:
   min_sdk_android: 21
 
 flutter_native_splash:
-  color: "#993386"
-  image: "assets/splash_full.png"
+  image: "assets/logo_foreground.png"
+  background_image: "assets/splash_background.png"
   android: true
   ios: true
-  android_gravity: fill
   ios_content_mode: scaleAspectFill
 
 # The following section is specific to Flutter.
