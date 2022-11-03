@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/example/profcosmetic/BuildConfig.java
- com.example.profcosmetic.BuildConfig

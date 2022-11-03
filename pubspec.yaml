@@ -62,7 +62,7 @@ flutter_icons:
   min_sdk_android: 21
 
 flutter_native_splash:
-  image: "assets/logo_foreground.png"
+  image: "assets/logo_foreground_3.png"
   background_image: "assets/splash_background.png"
   android: true
   ios: true
