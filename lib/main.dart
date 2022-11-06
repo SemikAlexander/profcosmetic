@@ -7,6 +7,11 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'dart:developer';
 
+String baseUrl = "https://profcosmetik.com/";
+String url = baseUrl;
+
+WebViewController? controller;
+
 void main() async {
   await initialization(null);
   FlutterNativeSplash.removeAfter(initialization);
@@ -32,7 +37,6 @@ void main() async {
   );
 
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-  log('User FB granted permission: ${settings.authorizationStatus}');
 
   runApp(
     const MaterialApp(
@@ -47,8 +51,6 @@ Future initialization(BuildContext? context) async {
 
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
-
-  log('Handling a background message: ${message.messageId}');
 }
 
 class WebViewApp extends StatefulWidget {
@@ -62,15 +64,47 @@ class _WebViewAppState extends State<WebViewApp> {
   @override
   void initState() {
     super.initState();
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) async {
+      log('URL: $url');
+      log('RemoteMessage: ${message.notification?.body}');
+
+      var messageNotification = message.notification?.body ?? "";
+      var urlFromNotification = getURLFromMessage(messageNotification);
+
+      if (urlFromNotification != "") {
+        url = urlFromNotification;
+      } else {
+        url = baseUrl;
+      }
+
+      setState(() {
+        controller?.loadUrl(url);
+      });
+
+      log('URL: $url');
+    });
+  }
+
+  String getURLFromMessage(String message) {
+    RegExp exp = RegExp(r'(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+');
+    Iterable<RegExpMatch> matches = exp.allMatches(message);
+
+    for (var match in matches) {
+      return message.substring(match.start, match.end);
+    }
+    return "";
   }
 
   @override
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
-    return const WebView(
-      initialUrl: 'https://profcosmetik.com/',
-      javascriptMode: JavascriptMode.unrestricted,
-    );
+    return WebView(
+        initialUrl: url,
+        javascriptMode: JavascriptMode.unrestricted,
+        onWebViewCreated: (WebViewController webViewController) {
+          controller = webViewController;
+        });
   }
 }
