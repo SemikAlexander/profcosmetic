@@ -8,6 +8,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 import 'dart:developer';
 
 String baseUrl = "https://profcosmetik.com/";
+String notificationUrl = "https://profcosmetik.com/notifications/";
 String url = baseUrl;
 
 WebViewController? controller;
@@ -26,7 +27,7 @@ void main() async {
 
   FirebaseMessaging messaging = FirebaseMessaging.instance;
 
-  NotificationSettings settings = await messaging.requestPermission(
+  await messaging.requestPermission(
     alert: true,
     announcement: false,
     badge: true,
@@ -65,8 +66,14 @@ class _WebViewAppState extends State<WebViewApp> {
   void initState() {
     super.initState();
 
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+      if (message.notification != null) {
+
+      }
+    });
+
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) async {
-      log('URL: $url');
+      /*log('URL: $url');
       log('RemoteMessage: ${message.notification?.body}');
 
       var messageNotification = message.notification?.body ?? "";
@@ -76,7 +83,9 @@ class _WebViewAppState extends State<WebViewApp> {
         url = urlFromNotification;
       } else {
         url = baseUrl;
-      }
+      }*/
+
+      url = notificationUrl;
 
       setState(() {
         controller?.loadUrl(url);
